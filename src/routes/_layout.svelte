@@ -15,7 +15,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{`acmCSUF / ${pageTitle}`}</title>
-  <link
+
+  <link rel="icon" href="assets/new_assets/badges/general-badge.svg" />
+  <!-- <link
     rel="apple-touch-icon"
     sizes="180x180"
     href="/assets/favicon/apple-touch-icon.png"
@@ -45,5 +47,5 @@
     content="/assets/favicon/browserconfig.xml"
   />
   <meta name="theme-color" content="#000" />
-  <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+  <link rel="alternate" type="application/rss+xml" href="/feed.xml" /> -->
 </svelte:head>
