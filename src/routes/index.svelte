@@ -6,9 +6,10 @@
   import CallToActionSection from "@/components/sections/call-to-action-section.svelte";
 </script>
 
+<Spacing amount="200px" />
 <Hero />
 
-<Spacing amount="200px" />
+<!-- <Spacing amount="200px" />
 
 <WhyJoin />
 
@@ -28,4 +29,4 @@
   </p>
 </CallToActionSection>
 
-<Spacing amount="200px" />
+<Spacing amount="200px" /> -->

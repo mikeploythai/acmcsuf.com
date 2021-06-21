@@ -4,48 +4,98 @@
     { title: "about", slug: "about" },
     { title: "events", slug: "events" },
     { title: "paths", slug: "paths" },
-    { title: `node<span class="brand-red">Buds</span>`, slug: "nodebuds" },
+    {
+      title: `node<span class="brand-em brand-red">Buds</span>`,
+      slug: "nodebuds",
+    },
     { title: "connect", slug: "connect" },
   ];
 </script>
 
 <nav>
-  <input type="checkbox" id="navToggle" />
+  <!-- <input type="checkbox" id="navToggle" /> -->
+  <div class="content">
+    <a href="/" class="full-logomark">
+      <img
+        src="assets/new_assets/badges/general-badge.svg"
+        width="48"
+        class="logo-badge"
+        alt="acmCSUF badge"
+      />
+      <span class="logo-text brand-em">CSUF</span>
+    </a>
 
-  <a href="/" class="logo">
-    <img
-      src="assets/png/acm-csuf-badge.png"
-      width="48"
-      class="logoBadge"
-      alt="ACM CSUF logo with a transparent background."
-    />
-    <span class="logoText">CSUF</span>
-  </a>
+    <ul class="pages">
+      {#each menuItems as { title, slug } (slug)}
+        <li>
+          <a
+            href="{`/${slug}`}"
+            class="{`page page-${slug}`} headers"
+            rel="prefetch"
+            aria-current="{segment === slug}"
+          >
+            {@html title}
+          </a>
+        </li>
+      {/each}
+    </ul>
+  </div>
 
-  <ul class="pages">
-    {#each menuItems as { title, slug } (slug)}
-      <li>
-        <a
-          href="{`/${slug}`}"
-          class="{`page page-${slug}`}"
-          rel="prefetch"
-          aria-current="{segment === slug}"
-        >
-          {@html title}
-        </a>
-      </li>
-    {/each}
-  </ul>
-
-  <label for="navToggle" class="menu">
+  <!--  <label for="navToggle" class="menu">
     <div class="menuLine"></div>
     <div class="menuLine"></div>
     <div class="menuLine"></div>
-  </label>
+  </label> -->
 </nav>
 
 <style>
   nav {
+    position: fixed;
+    width: 100vw;
+    background-color: var(--acm-light);
+    filter: drop-shadow(0 2px 8px rgba(16, 19, 21, 0.1));
+    -webkit-filter: drop-shadow(0 2px 8px rgba(16, 19, 21, 0.1));
+  }
+
+  nav .content,
+  nav .full-logomark,
+  nav .pages {
+    display: flex;
+    align-items: center;
+  }
+
+  nav li,
+  nav a {
+    list-style: none;
+    text-decoration: none;
+  }
+
+  nav .content {
+    justify-content: center;
+    padding: 24px 0;
+  }
+
+  nav .full-logomark {
+    margin-right: 376px;
+  }
+
+  nav .full-logomark .logo-badge {
+    background-color: transparent;
+    filter: drop-shadow(0 1.5px 4.5px rgba(44, 145, 198, 0.5));
+    -webkit-filter: drop-shadow(0 1.5px 4.5px rgba(44, 145, 198, 0.5));
+  }
+
+  nav .full-logomark .logo-text {
+    font-size: 24px;
+    padding-left: 8px;
+  }
+
+  nav .pages a {
+    font-size: 18px;
+    margin-left: 64px;
+  }
+
+  /* nav {
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -92,16 +142,14 @@
     text-decoration: none;
   }
 
-  nav .pages .page[aria-current="true"] {
-    color: #3792c1;
-  }
+  
 
   nav .pages .page-node-buds[aria-current="true"] {
     font-weight: 700;
     color: #c40042;
-  }
+  } */
 
-  #navToggle {
+  /* #navToggle {
     display: none;
   }
 
@@ -187,5 +235,5 @@
     nav .menu {
       right: 48px;
     }
-  }
+  } */
 </style>

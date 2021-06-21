@@ -7,9 +7,9 @@
 </script>
 
 <Navbar segment="{segment}" />
-<SkipNavbarContent />
+<!-- <SkipNavbarContent /> -->
 <main><slot /></main>
-<Footer />
+<!-- <Footer /> -->
 
 <svelte:head>
   <meta charset="UTF-8" />

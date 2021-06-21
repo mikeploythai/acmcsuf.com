@@ -3,18 +3,20 @@
 </script>
 
 <section>
-  <div class="main-text-container">
-    <h1 class="main-text">
-      <span>We are the largest tech community at</span>
+  <div class="left-content">
+    <div class="main-text headers">
+      We are the largest tech chapter at
       <span class="brand-em brand-blue">CSUF</span>
-    </h1>
+    </div>
+
     <AcmButton
       text="Join us today!"
       link="https://tinyurl.com/acm-csuf-discord/"
     />
   </div>
+
   <img
-    src="/assets/png/hero-illustration.png"
+    src="assets/new_assets/hero-illustration.png"
     alt="Frank the shark (ACM CSUF's mascot) is holding a flag that says 'I ♥ ACM'"
   />
 </section>
@@ -22,59 +24,25 @@
 <style>
   section {
     display: flex;
-    flex-direction: column-reverse;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
   }
 
-  section .main-text-container {
+  section .left-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   }
 
-  section .main-text-container .main-text {
-    text-transform: lowercase;
-    font-weight: bold;
-    font-size: var(--heading-font-size);
-    text-align: center;
-    margin: 0 24px;
+  section .left-content .main-text {
+    font-size: 48px;
+    max-width: 570px;
   }
 
   section img {
-    width: 270px;
-    margin-left: -2rem;
-    object-fit: contain;
-  }
-
-  @media (min-width: 768px) {
-    section .main-text-container .main-text {
-      margin: 0 150px;
-    }
-
-    section figure img {
-      width: 420px;
-    }
-  }
-
-  @media screen and (min-width: 1440px) {
-    section {
-      flex-direction: row;
-      margin: 0 128px 0 128px;
-    }
-
-    section .main-text-container {
-      align-items: flex-start;
-    }
-
-    section .main-text-container .main-text {
-      text-align: left;
-      margin: 0;
-    }
-
-    section img {
-      width: 540px;
-    }
+    margin-left: 120px;
+    background-color: transparent;
+    filter: drop-shadow(0 10px 40px rgba(44, 145, 198, 0.5));
   }
 </style>
