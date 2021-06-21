@@ -41,8 +41,8 @@
   }
 
   section img {
+    max-width: 468px;
     margin-left: 120px;
-    background-color: transparent;
     filter: drop-shadow(0 10px 40px rgba(44, 145, 198, 0.5));
   }
 </style>

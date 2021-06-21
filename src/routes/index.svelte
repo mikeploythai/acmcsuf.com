@@ -9,24 +9,21 @@
 <Spacing amount="200px" />
 <Hero />
 
-<!-- <Spacing amount="200px" />
-
+<Spacing amount="200px" />
 <WhyJoin />
 
 <Spacing amount="200px" />
-
 <AcmPaths />
 
 <Spacing amount="200px" />
-
 <CallToActionSection>
-  <h2 slot="headline">So what are you waiting for?</h2>
+  <h2 slot="headline" class="headers">Ready to get started?</h2>
   <p slot="text">
-    We invite you to become a part of our chapter consisting of
-    <b>350<span class="brand-blue">+</span> members</b>, and rising! All of our
-    coding workshops, info sessions, and community events were designed to start
-    off your tech journey on the right foot.
+    We invite all to join our student chapter consisting of <span
+      style="font-weight: 500">350+</span
+    > passionate tech enthusiasts. Each of our workshops, info sessions, and community
+    events were designed to kickstart your tech journey on the right foot.
   </p>
 </CallToActionSection>
 
-<Spacing amount="200px" /> -->
+<Spacing amount="120px" />

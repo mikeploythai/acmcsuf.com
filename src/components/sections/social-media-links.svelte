@@ -34,7 +34,12 @@
 
 <section class="social-media-links-section">
   {#each socialLinks as { platform, link, icon } (platform)}
-    <a href="{link}" class="social-link" target="_blank">
+    <a
+      href="{link}"
+      class="social-link"
+      target="_blank"
+      rel="noopener norefferer"
+    >
       <svelte:component this="{icon}" />
       {platform}
     </a>

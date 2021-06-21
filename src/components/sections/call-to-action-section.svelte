@@ -3,8 +3,10 @@
 </script>
 
 <section>
-  <slot name="headline" tag="h2" />
-  <slot name="text" tag="p" />
+  <div class="main-text">
+    <slot name="headline" tag="h2" />
+    <slot name="text" tag="p" />
+  </div>
   <AcmButton
     text="join us today!"
     link="https://tinyurl.com/acm-csuf-discord/"
@@ -13,6 +15,26 @@
 
 <style>
   section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  section .main-text {
+    max-width: 950px;
+  }
+
+  section :global(h2) {
+    font-size: 36px;
+  }
+
+  section :global(p) {
+    font-size: 16px;
+    margin-top: 16px;
+  }
+
+  /* section {
     margin: 0 20px;
     display: flex;
     flex-direction: column;
@@ -34,5 +56,5 @@
     section {
       padding: 0 180px;
     }
-  }
+  } */
 </style>

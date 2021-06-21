@@ -5,10 +5,11 @@
 
 <section>
   <div class="paths-intro">
-    <h2>Get involved with our paths!</h2>
+    <h2 class="headers">Get involved with our paths!</h2>
     <p>
-      Are you looking to specialize somewhere specific in tech? Our paths were
-      designed to jumpstart student's own journeys in the tech industry.
+      Paths were designed to empower students who want to specialize in something specific within the industry.  
+      By joining any of our paths, students will be given access to exclusive workshops and events that’ll build, 
+      strengthen, and improve skills. 
     </p>
   </div>
 
@@ -16,8 +17,8 @@
     {#each acmPaths as { title, slug, picture, color } (slug)}
       <a class="path-item" href="{`/paths#${slug}`}">
         <img src="{picture}" alt="{`${slug}-logo`}" />
-        <p>
-          acm<span use:styleProps="{{ 'brand-color': color }}">{title}</span>
+        <p class="headers">
+          acm<span use:styleProps="{{ 'brand-color': color }}" class="brand-em">{title}</span>
         </p>
       </a>
     {/each}
@@ -25,7 +26,58 @@
 </section>
 
 <style>
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .paths-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1050px;
+  }
+
+  .paths-intro h2 {
+    font-size: 36px;
+  }
+
+  .paths-intro p {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+
+  .paths-list {
+    display: flex;
+    margin-top: 64px;
+    user-select: none;
+  }
+
+  .path-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 75px 0;
+  }
+
+  .path-item img {
+    max-width: 200px;
+  }
+
+  .path-item p {
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  .path-item p span {
+    color: var(--brand-color);
+  }
+  
+  /* .paths-intro {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,5 +147,5 @@
       width: 250px;
       height: 250px;
     }
-  }
+  } */
 </style>

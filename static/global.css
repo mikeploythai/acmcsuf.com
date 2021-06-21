@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
 
-/* html, body {
+html, body {
   overflow-x: hidden;
-} */
+  background-color: #f8f8f8;
+}
 
 *,
 html,
 body,
 #sapper {
-  background-color: #f8f8f8;
   color: #101315;
   font-family: "Poppins", sans-serif;
   padding: 0;

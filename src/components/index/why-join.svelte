@@ -3,29 +3,54 @@
 
 <section>
   <img
-    src="assets/png/why-join-illustration.png"
+    src="assets/new_assets/why-join-illustration.png"
     alt="Social event with acmCSUF club members."
   />
-  <div>
-    <h2>
-      Why should students join <span class="brand-em"
-        >acm<span class="brand-blue">CSUF</span></span
-      >?
+  <div class="right-content">
+    <h2 class="headers">
+      Why should students join?
     </h2>
     <p>
-      <span class="brand-em">acm<span class="brand-blue">CSUF</span></span>
-      is a community that encourages growth, friendship, and technical development.
-      We prepare each other to overcome future personal, academic, and professional
-      challenges that some may face down the road. By joining
-      <span class="brand-em">acm<span class="brand-blue">CSUF</span></span>,
-      you'll be stepping into a community that will help you get started on your
-      tech journey.
+      We help kickstart student’s journies through the tech industry by providing workshops 
+      that enable growth of technical ability, a community of techies open to building personal 
+      and professional connections, and a mentorship program full of enthusiastic upperclassmen 
+      ready prepare underclassmen for success.
     </p>
   </div>
 </section>
 
 <style>
   section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section .right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: center;
+    max-width: 680px;
+  }
+
+  section .right-content .headers {
+    font-size: 36px;
+  }
+
+  section .right-content p {
+    padding-top: 16px;
+    font-size: 16px;
+  }
+
+  section img {
+    max-width: 350px;
+    margin-right: 120px;
+    filter: drop-shadow(0 10px 40px rgba(44, 145, 198, 0.5));
+  }
+  
+  /* section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,5 +96,5 @@
     section div p {
       text-align: right;
     }
-  }
+  } */
 </style>

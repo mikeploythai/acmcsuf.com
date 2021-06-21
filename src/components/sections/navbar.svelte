@@ -51,6 +51,7 @@
 <style>
   nav {
     position: fixed;
+    z-index: 100;
     width: 100vw;
     background-color: var(--acm-light);
     filter: drop-shadow(0 2px 8px rgba(16, 19, 21, 0.1));
@@ -80,7 +81,6 @@
   }
 
   nav .full-logomark .logo-badge {
-    background-color: transparent;
     filter: drop-shadow(0 1.5px 4.5px rgba(44, 145, 198, 0.5));
     -webkit-filter: drop-shadow(0 1.5px 4.5px rgba(44, 145, 198, 0.5));
   }
