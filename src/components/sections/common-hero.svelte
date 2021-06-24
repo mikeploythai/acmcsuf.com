@@ -4,10 +4,10 @@
 </script>
 
 <section>
-  <header>
+  <!-- <header>
     <img src="{src}" alt="{alt}" />
-    <slot name="title" tag="h1" class="title" />
-  </header>
+    <slot name="title" tag="h1" class="title .headers" />
+  </header> -->
   <div>
     <slot name="headline" tag="h2" class="headline" />
     <slot name="text" tag="p" class="text" />
@@ -16,6 +16,26 @@
 
 <style>
   section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  section div {
+    max-width: 1150px
+  }
+
+  section div :global(h2) {
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  section div :global(p) {
+    margin-top: 16px;
+    font-size: 16px;
+  } 
+
+  /* section {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -36,7 +56,6 @@
   section header :global(h1) {
     margin: 0;
     font-size: var(--heading-font-size);
-    font-weight: bold;
     text-transform: lowercase;
   }
 
@@ -54,9 +73,9 @@
   section div :global(p) {
     margin: 0 3rem;
     font-size: var(--body-font-size);
-  }
+  } */
 
-  @media screen and (min-width: 768px) {
+  /* @media screen and (min-width: 768px) {
     section header {
       flex-direction: row;
     }
@@ -71,5 +90,5 @@
       text-align: center;
       max-width: 64rem;
     }
-  }
+  } */
 </style>

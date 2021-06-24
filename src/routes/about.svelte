@@ -3,30 +3,32 @@
   import OfficerProfileList from "@/components/sections/officer-profile-list.svelte";
   import Spacing from "@/components/sections/spacing.svelte";
   import CallToActionSection from "@/components/sections/call-to-action-section.svelte";
+  import Header from "@/components/about/what-is-acm.svelte";
 </script>
 
+<Spacing amount="200px" />
+<Header/>
+
+<Spacing amount="64px" />
 <CommonHero>
-  <h1 slot="title">About</h1>
   <h2 slot="headline">
-    What is <span class="brand-em">
-      acm<span class="brand-blue">CSUF</span>
-    </span>
+    Who are we?
   </h2>
   <p slot="text">
-    <span class="brand-em">acm<span class="brand-blue">CSUF</span></span>
-    is a student-ran chapter of the Association for Computing Machinery. We focus
-    on getting students involved in the tech community as well as educating students
-    about the field through workshops, presentations, livestreams, and more. Our
-    events are open to any and everyone, so be sure to drop by!
+    <span class="headers">acm<span class="brand-em brand-blue">CSUF</span></span> is a student chapter of the Association for Computing Machinery, an 
+    international organization based in New York that advocates for the advancement 
+    of computer science as a science and profession.  Our chapter based in California 
+    State University, Fullerton focuses on bringing passionate Titans together to be 
+    involved in the tech community via workshops, info sessions, community 
+    events, and more!
   </p>
 </CommonHero>
 
 <Spacing amount="200px" />
-
 <OfficerProfileList />
-
-<Spacing amount="175px" />
-
+ 
+<Spacing amount="120px" />
+<!--
 <CallToActionSection>
   <h2 slot="headline">How can I get involved?</h2>
   <p slot="text">
@@ -36,4 +38,4 @@
   </p>
 </CallToActionSection>
 
-<Spacing amount="175px" />
+<Spacing amount="175px" /> -->

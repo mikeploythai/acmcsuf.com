@@ -5,7 +5,7 @@
     { title: "events", slug: "events" },
     { title: "paths", slug: "paths" },
     {
-      title: `node<span class="brand-em brand-red">Buds</span>`,
+      title: '<span class="headers">node</span>Buds',
       slug: "nodebuds",
     },
     { title: "connect", slug: "connect" },
@@ -52,7 +52,7 @@
   nav {
     position: fixed;
     z-index: 100;
-    width: 100vw;
+    width: 100%;
     background-color: var(--acm-light);
     filter: drop-shadow(0 2px 8px rgba(16, 19, 21, 0.1));
     -webkit-filter: drop-shadow(0 2px 8px rgba(16, 19, 21, 0.1));
@@ -93,6 +93,27 @@
   nav .pages a {
     font-size: 18px;
     margin-left: 64px;
+    transition: color .25s ease-in-out;
+  }
+
+  nav .page-about:hover,
+  nav .page-about[aria-current="true"],
+  nav .page-events:hover,
+  nav .page-events[aria-current="true"],
+  nav .page-paths:hover,
+  nav .page-paths[aria-current="true"],
+  nav .page-connect:hover,
+  nav .page-connect[aria-current="true"] {
+    color: var(--acm-blue);
+  }
+
+  nav .page-nodebuds {
+    font-weight: 700;
+  }
+
+  nav .page-nodebuds:hover, 
+  nav .page-nodebuds[aria-current="true"] {
+    color: var(--acm-red);
   }
 
   /* nav {

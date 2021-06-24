@@ -26,9 +26,9 @@
     transition: background-color 0.25s ease-in-out;
   }
 
-  /* .call-to-action:hover {
+  .call-to-action:hover {
     background-color: var(--acm-blue);
-  } */
+  }
 
   /* .call-to-action {
     display: block;

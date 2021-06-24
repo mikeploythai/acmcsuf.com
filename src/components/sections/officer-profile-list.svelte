@@ -4,16 +4,15 @@
   import AcmSelect from "@/components/utils/acm-select.svelte";
   import Spacing from "@/components/sections/spacing.svelte";
 
-  let currentSchoolYear = "2020-2021";
+  let currentSchoolYear = "2021-2022";
 </script>
 
 <section>
-  <h2>
-    Board
-    <span class="brand-blue">Officers</span>
+  <h2 class="headers">
+    Board members
   </h2>
 
-  <Spacing amount="30px" />
+  <Spacing amount="16px" />
 
   <div class="school-year-input-container">
     <AcmSelect
@@ -22,30 +21,37 @@
     />
   </div>
 
-  <Spacing amount="30px" />
+  <!-- <Spacing amount="64px" /> -->
 
-  <div class="officer-profile-list">
-    {#each officers[currentSchoolYear] as { name, title, picture } (name)}
-      <OfficerProfile name="{name}" title="{title}" picture="{picture}" />
-    {/each}
+  <div class="container">
+    <div class="officer-profile-list">
+      {#each officers[currentSchoolYear] as { name, title, picture } (name)}
+        <OfficerProfile name="{name}" title="{title}" picture="{picture}" />
+      {/each}
+    </div>
   </div>
 </section>
 
 <style>
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   section h2 {
-    text-transform: lowercase;
     text-align: center;
-    font-size: var(--heading-font-size);
+    font-size: 36px;
   }
 
   .school-year-input-container {
-    min-width: 100px;
     text-align: center;
   }
 
   .officer-profile-list {
     display: flex;
     flex-flow: row wrap;
+    max-width: 1200px;
     justify-content: space-around;
   }
 </style>

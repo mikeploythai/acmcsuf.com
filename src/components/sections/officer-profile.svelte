@@ -9,10 +9,10 @@
     .replace(/Create/, `<span class="brand-em brand-pink">Create</span>`)
     .replace(/Algo/, `<span class="brand-em brand-purple">Algo</span>`)
     .replace(/Dev/, `<span class="brand-em brand-bluer">Dev</span>`)
-    .replace(/Webmaster/, `<span class="brand-em brand-blue">Webmaster</span>`)
+    .replace(/Webmaster/, `<span class="headers brand-blue">Webmaster</span>`)
     .replace(
       /NodeBuds/,
-      `<span class="brand-em">Node<span class="brand-red">Buds</span></span>`
+      `<span class="headers">node<span class="brand-em brand-red">Buds</span></span>`
     );
 </script>
 
@@ -22,7 +22,7 @@
     src="{`../assets/authors/${picture}`}"
     alt="{`Image of ${name}.`}"
   />
-  <h3>
+  <h3 class="headers">
     {name}
   </h3>
   <p>
@@ -32,6 +32,31 @@
 
 <style>
   .officer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 64px 0;
+  }
+
+  .officer-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  h3 {
+    font-size: 18px;
+    color: var(--acm-dark);
+    margin-top: 8px;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--acm-dark);
+  }
+
+  /* .officer-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,5 +72,5 @@
   h3 {
     font-size: 1.5rem;
     color: var(--acm-dark);
-  }
+  } */
 </style>

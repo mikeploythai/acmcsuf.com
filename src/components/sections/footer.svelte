@@ -25,7 +25,7 @@
 
 <style>
   footer {
-    width: 100vw;
+    width: 100%;
     background-color: var(--acm-dark);
   }
 
@@ -55,7 +55,7 @@
     transition: fill 0.25s ease-in-out;
   }
 
-  /* footer .github:hover :global(path) {
+  footer .github:hover :global(path) {
     fill: var(--acm-blue);
-  } */
+  }
 </style>
