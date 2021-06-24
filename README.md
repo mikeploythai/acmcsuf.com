@@ -1,38 +1,49 @@
-# [`acmcsuf.com`][demo_url] 🐘
+# [`acm_beta`](https://acm-beta.vercel.app) 🐘
 
-> Official website of CSUF's ACM club.
+> Repo for Fall 2021 update of acmCSUF website.
 
-## Develop [👩‍💻][figma_design]
-
-> 💡 This project runs on NodeJS; [install the latest long-term support version][node_download].
-
-To get started, clone this repository to your machine and run `npm i` in the root of this project.
-Then, run `npm run dev` to spin up the [development server][dev_server].
-
-For more information, check out the [`CONTRIBUTING.md`](CONTRIBUTING.md) document.
-
-## Deployment 🚀
-
-Whenever a push is made to the main branch, Vercel builds the site, tests it, and if there are no errors, it will deploy a preview site.
-Once an admin approves the preview site, it gets promoted to production.
-
-## Designers 🎨
-
-- [Jacob Nguyen](https://github.com/barrotbake)
-- [Lisa Hong](#)
-- [Mike Ploythai](https://github.com/mikeploythai)
-- [Mathias Nguyen](#)
+## Changelog
+- [x] Introduced remastered acmBadges
+- [x] Replaced all assets with SVG variants where possible
+- [x] Updated color palette
+- [x] Updated graphics for home page and about page
+- [ ] Fixed all font weights
+- [x] Introduced font weight 500
+- [ ] Re-worded all paragraphs of sections
+- [ ] Re-named all headers except paths page headers
+- [ ] Fixed no fade out glitch on all buttons and links
+- [x] Buttons and links change color upon hover
+- [x] Shadows are more spread
+- [x] Elements are now constrained to center of screen rather than sides
+- [x] Minimalized footer
+- [x] Board member section defaults to 2021-2022 school year
+- [ ] Added 2021-2022 board member data
+- [x] Arrow removed from board member button
+- [ ] Event cards display different shadow colors based on which calendar an event is slotted in
+- [x] Replaced "|" divider with "/" in tab header
+- [x] Depreceated "So what are you waiting for?" CTA
+- [ ] Depreceated SkipNavbar function on all pages, redundant
+- [ ] Redesigned nodeBuds page, introduce nodeBuds officer section
+- [x] acmCSUF badge and h1 removed from CommonHero
+- [ ] Depreceated social media tabs from connect page, replaced with social media logos
+- [ ] Depreceated Google Form contact box to avoid making our own privacy policy, replaced with custom made contact form
+- [ ] Fixed tab header not displaying proper page name which switching
+- [ ] Introduced new temp badges for board member section in about
+- [x] Introduced max-width property to sections
+- [ ] Adapt changes to mobile layout
+- [ ] Disable user-select for nav bar
 
 ---
 
-Maintained with 💖 by [**acmDev**][team_page]
+| Credits | Contribution |
+| --- | --- |
+| [Ethan Davidson](https://github.com/EthanThatOneKid) | Development |
+| [BJ Warfield](https://github.com/bjwarfield) | Development |
+| [DiamondBurned](https://github.com/diamondburned) | Development |
+| [Samuel Sandoval](https://github.com/samuelsandoval1) | Development |
+| [Mike Ploythai](https://github.com/mikeploythai) | Design, Development |
+| [Jacob Ngyuen](https://github.com/barrotbake) | Design |
+| Lisa Hong | Design |
+| [Mathias Nguyen](https://github.com/matty-ice21) | Design |
 
-[node_download]: https://nodejs.org/en/download/
-[github_action_deploy]: .github/workflows/deploy.yaml
-[demo_url]: https://acmcsuf.com/
-[acm_officers]: https://acmcsuf.com/about/
-[webmaster_url]: https://github.com/EthanThatOneKid/
-[figma_design]: https://www.figma.com/file/9cvuO69WgNGuCjf2JGDPfq/ACM-Website-Mockup---Mike-Ploythai?node-id=1%3A26
-[dev_server]: http://localhost:3000/
-[vercel_dashboard]: https://vercel.com/ethanthatonekid/acm-csuf-site
-[team_page]: https://acmcsuf.com/about/
+#### [**Official Repo**](https://github.com/EthanThatOneKid/acmcsuf.com) / [**Offical Website**](https://acmcsuf.com)
