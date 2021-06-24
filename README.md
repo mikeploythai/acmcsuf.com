@@ -46,4 +46,4 @@
 | Lisa Hong | Design |
 | [Mathias Nguyen](https://github.com/matty-ice21) | Design |
 
-#### [**Official Repo**](https://github.com/EthanThatOneKid/acmcsuf.com) / [**Offical Website**](https://acmcsuf.com)
+#### [**Official Repo**](https://github.com/EthanThatOneKid/acmcsuf.com) / [**Offical Website**](https://acmcsuf.com) / [**Beta Website Design**](https://www.figma.com/file/B4KBkjJj32Jo5qmINSl6NN/Untitled?node-id=25%3A78)
