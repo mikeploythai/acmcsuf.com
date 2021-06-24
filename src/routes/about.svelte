@@ -7,27 +7,30 @@
 </script>
 
 <Spacing amount="200px" />
-<Header/>
+<Header />
 
 <Spacing amount="64px" />
 <CommonHero>
-  <h2 slot="headline">
-    Who are we?
-  </h2>
+  <h2 slot="headline">Who are we?</h2>
   <p slot="text">
-    <span class="headers">acm<span class="brand-em brand-blue">CSUF</span></span> is a student chapter of the Association for Computing Machinery, an 
-    international organization based in New York that advocates for the advancement 
-    of computer science as a science and profession.  Our chapter based in California 
-    State University, Fullerton focuses on bringing passionate Titans together to be 
-    involved in the tech community via workshops, info sessions, community 
-    events, and more!
+    <span class="headers">acm<span class="brand-em brand-blue">CSUF</span></span
+    >
+    is a student chapter of the
+    <a href="https://acm.org" class="acm-text" target="_blank" rel="noopener noreferrer"
+      >Association for Computing Machinery</a
+    >, an international organization based in New York that advocates for the
+    advancement of computer science as a science and profession. Our chapter
+    based in California State University, Fullerton focuses on bringing
+    passionate Titans together to be involved in the tech community via
+    workshops, info sessions, community events, and more!
   </p>
 </CommonHero>
 
 <Spacing amount="200px" />
 <OfficerProfileList />
- 
+
 <Spacing amount="120px" />
+
 <!--
 <CallToActionSection>
   <h2 slot="headline">How can I get involved?</h2>
@@ -39,3 +42,15 @@
 </CallToActionSection>
 
 <Spacing amount="175px" /> -->
+<style>
+  .acm-text {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--acm-dark);
+    transition: color 0.25s ease-in-out;
+  }
+
+  .acm-text:hover {
+    color: var(--acm-blue);
+  }
+</style>

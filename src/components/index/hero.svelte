@@ -5,7 +5,7 @@
 <section>
   <div class="left-content">
     <div class="main-text headers">
-      We are the largest tech chapter at
+      We are the largest tech community at
       <span class="brand-em brand-blue">CSUF</span>
     </div>
 
