@@ -73,6 +73,10 @@ body,
   font-weight: 600;
 }
 
+.mid {
+  font-weight: 500;
+}
+
 .brand-blue {
   color: var(--acm-blue);
 }

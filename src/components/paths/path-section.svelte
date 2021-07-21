@@ -11,14 +11,15 @@
   export let info: AcmPath | undefined;
 </script>
 
-{#if info !== undefined}
+<div class="container">
+  {#if info !== undefined}
   <section id="{info.slug}" class:👈="{textAlign === TextAlignment.Left}">
     <img src="{info.picture}" alt="{`acm${info.title} Logo`}" />
     <div>
       <h2>
-        <span class="brand-em">
+        <span class="headers">
           acm<span use:styleProps="{{ 'font-color': info.color }}">
-            {info.title}
+            <span class="brand-em">{info.title}</span>
           </span>
         </span>
       </h2>
@@ -26,16 +27,66 @@
     </div>
   </section>
 {/if}
+</div>
 
 <style>
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
   section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 1064px;
+  }
+
+  section img {
+    margin-left: -32px;
+    min-width: 350px;
+  }
+
+  section div {
+    text-align: right;
+    max-width: 650px;
+  }
+
+  section div h2 {
+    font-size: 36px;
+    padding-bottom: 16px;
+  }
+
+  section div h2 span span {
+    color: var(--font-color);
+  }
+
+  section div :global(p) {
+    font-size: 16px;
+  }
+
+  /* Left */
+  .👈 {
+    flex-direction: row-reverse;
+  }
+  
+  .👈 div {
+    text-align: left;
+  }
+
+  .👈 img {
+    margin-right: -32px;
+  }
+  
+
+  /* section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 
     /* The next two lines leave space above the anchored element. */
-    padding-top: calc(1.5 * var(--navbar-height));
+  /*   padding-top: calc(1.5 * var(--navbar-height));
     margin-top: calc(-1.5 * var(--navbar-height));
   }
 
@@ -54,10 +105,10 @@
   section div h2 {
     font-size: var(--heading-font-size);
     text-align: right;
-  }
+  } */
 
   /* Class `.👈` represents `<PathSection textAlign="left" />` */
-  .👈 div h2 {
+  /* .👈 div h2 {
     text-align: left;
   }
 
@@ -93,5 +144,5 @@
     section div {
       max-width: 720px;
     }
-  }
+  } */
 </style>

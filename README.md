@@ -11,7 +11,7 @@
 - [x] Introduced font weight 500
 - [ ] Re-worded all paragraphs of sections
 - [ ] Re-named all headers except paths page headers
-- [ ] Fixed no fade out glitch on all buttons and links
+- [x] Fixed no fade out glitch on all buttons and links
 - [x] Buttons and links change color upon hover
 - [x] Shadows are more spread
 - [x] Elements are now constrained to center of screen rather than sides

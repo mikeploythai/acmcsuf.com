@@ -51,7 +51,7 @@
   .officer-profile-list {
     display: flex;
     flex-flow: row wrap;
-    max-width: 1200px;
-    justify-content: space-around;
+    max-width: 1250px;
+    justify-content: space-between;
   }
 </style>

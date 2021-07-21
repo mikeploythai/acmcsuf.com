@@ -5,16 +5,20 @@
 
 <section>
   <div class="info-container">
-    <h2>testimonial - <slot name="semester" tag="span" /></h2>
+    <h2>Testimonial - <slot name="semester" tag="span" /></h2>
     <slot name="content" tag="p" />
   </div>
-  <div class="image-container">
+  <!-- <div class="image-container">
     <img src="{src}" alt="{alt}" />
-  </div>
+  </div> -->
 </section>
 
 <style>
   section {
+    display: flex;
+    text-align: center;
+  }
+/*   section {
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
@@ -22,7 +26,7 @@
   }
 
   .info-container {
-    max-width: 55vw; /* Here, max-width is being used to keep the text from overtaking the image's visual hierarchy. */
+    max-width: 55vw;
     font-size: var(--fluid-font-size);
     text-align: center;
   }
@@ -31,7 +35,7 @@
     text-transform: lowercase;
     font-size: var(--heading-font-size);
     margin-bottom: 20px;
-    hyphens: auto; /* Read: https://css-tricks.com/almanac/properties/h/hyphenate/ */
+    hyphens: auto;
   }
 
   .info-container :global(p) {
@@ -54,5 +58,5 @@
     .info-container {
       text-align: start;
     }
-  }
+  } */
 </style>

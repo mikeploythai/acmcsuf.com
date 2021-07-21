@@ -3,18 +3,18 @@
   import Footer from "@/components/sections/footer.svelte";
   import SkipNavbarContent from "@/components/utils/skip-navbar-content.svelte";
   export let segment: string;
-  const pageTitle = segment === undefined ? "ACM at CSUF" : segment;
+  /* const pageTitle = segment === undefined ? "ACM at CSUF" : segment; */
 </script>
 
 <Navbar segment="{segment}" />
 <!-- <SkipNavbarContent /> -->
-<main><slot /></main>
+<main style="min-height: 100vh;"><slot /></main>
 <Footer />
 
 <svelte:head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{`acmCSUF / ${pageTitle}`}</title>
+  <title>acmCSUF / ACM at CSUF</title>
 
   <link rel="icon" href="assets/new_assets/badges/general-badge.svg" />
   <!-- <link

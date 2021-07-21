@@ -8,14 +8,58 @@ interface Officer {
 export const officers: Record<string, Officer[]> = {
   "2021-2022": [
     {
-      name: "TBD",
-      title: "2021-2022 🚀",
+      name: "Aaron Lieberman ",
+      title: "President",
+    },
+    {
+      name: "Karnikka Velumani",
+      title: "Vice President",
+    },
+    {
+      name: "Ethan Davidson ",
+      title: "Webmaster",
+    },
+    {
+      name: "Tommy Le",
+      title: "Treasurer",
+    },
+    {
+      name: "Armanul Ambia ",
+      title: "Algo Director",
+    },
+    {
+      name: "Alex",
+      title: "Algo Officer",
+    },
+    {
+      name: "Mike Ploythai ",
+      title: "Create Director",
+    },
+    {
+      name: "Samuel Valls ",
+      title: "Create Officer",
+    },
+    {
+      name: "Kayla Nguyen",
+      title: "Create Officer",
+    },
+    {
+      name: "Serena Naranjo",
+      title: "Create Officer",
+    },
+    {
+      name: "Wesley Chou ",
+      title: "Dev Director",
+    },
+    {
+      name: "Andy Lasso",
+      title: "Dev Officer",
     },
   ],
   "2020-2021": [
     {
       name: "Jacob Nguyen",
-      title: "President/Create Director",
+      title: "President, Create Director",
       picture: "jacob-nguyen.png",
     },
     {
@@ -25,14 +69,13 @@ export const officers: Record<string, Officer[]> = {
     },
     {
       name: "Samuel Sandoval",
-      title: "Vice President/Dev Director 🧠",
+      title: "Vice President, Dev Director",
       picture: "samuel-sandoval.png",
     },
     {
       name: "Ethan Davidson",
-      title: "Webmaster 😎",
+      title: "Webmaster",
       picture: "ethan-davidson.png",
-      url: "https://github.com/EthanThatOneKid",
     },
     {
       name: "Andrew Lau",
@@ -109,7 +152,7 @@ export const officers: Record<string, Officer[]> = {
       title: "Create Officer",
       picture: "lisa-hong.png",
     },
-    {
+    /* {
       name: "Taylor Noh",
       title: "NodeBuds Officer",
       picture: "taylor-noh.png",
@@ -118,7 +161,7 @@ export const officers: Record<string, Officer[]> = {
       name: "Eugene Lee",
       title: "NodeBuds Officer",
       picture: "eugene-lee.png",
-    },
+    }, */
   ],
 };
 

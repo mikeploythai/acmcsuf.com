@@ -21,22 +21,21 @@
   });
 </script>
 
-<CommonHero src="../assets/png/acm-csuf-badge.png" alt="acm-CSUF-Logo">
-  <h1 slot="title">Events</h1>
-  <h2 slot="headline">All you need to know!</h2>
+<Spacing amount="200px" />
+
+<CommonHero>
+  <h2 slot="headline">Curated events for growth and success</h2>
   <p slot="text">
-    Events listed below are either hosted by <span class="brand-em"
-      >acm<span class="brand-blue">CSUF</span></span
-    >, <span class="brand-em">acm<span class="brand-purple">Algo</span></span>,
-    <span class="brand-em">acm<span class="brand-pink">Create</span></span>,
-    <span class="brand-em">acm<span class="brand-bluer">Dev</span></span>, or in
-    collaboration with other organizations. Unless specified, everyone is free
-    to join any of our events! It doesn't matter what major you are; as long as
-    you have an interest in tech, you're absolutely welcome to join us!
+    Our student chapter hosts a multitude of events throughout each school semester, 
+    consisting of workshops, info sessions, community building events, and much more! 
+    <span class="mid">Events are open to anyone interested, regardless of major or background experience.</span>
   </p>
 </CommonHero>
 
-<Spacing />
+<Spacing amount="200px"/>
+
+<h2 class="headers">This week's events</h2>
+<Spacing amount="64px"/>
 
 {#if events.length > 0}
   <EventCarousel events="{events}" />
@@ -46,15 +45,15 @@
       {#if isLoading}
         Loading…
       {:else}
-        There are currently no events scheduled.
+        There are no events scheduled for this week.
       {/if}
     </p>
   </AcmEmpty>
 {/if}
 
-<Spacing />
+<Spacing amount="120px" />
 
-<CallToActionSection>
+<!-- <CallToActionSection>
   <h2 slot="headline">So what are you waiting for?</h2>
   <p slot="text">
     We invite you to become a part of our chapter consisting of
@@ -64,4 +63,16 @@
   </p>
 </CallToActionSection>
 
-<Spacing amount="175px" />
+<Spacing amount="175px" /> -->
+
+<style>
+  h2 {
+    display: flex;
+    font-size: 36px;
+    justify-content: center;
+  }
+
+  p {
+    font-size: 16px;
+  }
+</style>
