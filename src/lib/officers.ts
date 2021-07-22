@@ -33,7 +33,7 @@ export const officers: Record<string, Officer[]> = {
     },
     {
       name: "Mike Ploythai ",
-      title: "Create Director",
+      title: "Create Director, Marketing Chair",
     },
     {
       name: "Samuel Valls ",
