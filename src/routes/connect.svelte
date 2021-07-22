@@ -9,7 +9,24 @@
     "1FAIpQLSfJanOAaL2mdjpf193tFeCClBzpW_COEO_crAE8hqsJCB_Rwg";
 </script>
 
-<CommonHero src="../assets/png/acm-csuf-badge.png" alt="acm-CSUF-Logo">
+<Spacing amount="200px"/>
+
+<CommonHero>
+  <h2 slot="headline">Connect with us!</h2>
+  <p slot="text">
+    The best way to stay up to date with us is by following all of our social platforms, 
+    and by joining our Discord server.  We post announcements, exclusive content, and more, 
+    so there’s never a chance to miss out on what’s going on.
+  </p>
+</CommonHero>
+
+<Spacing amount="64px"/>
+<SocialMediaLinks />
+
+<Spacing amount="200px"/>
+<GetInTouchForm googleFormId="{googleFormId}" />
+
+<!-- <CommonHero src="../assets/png/acm-csuf-badge.png" alt="acm-CSUF-Logo">
   <h1 slot="title">Connect</h1>
   <h2 slot="headline">Follow us!</h2>
   <p slot="text">
@@ -39,6 +56,6 @@
     is here to support you, as
     <span class="brand-em">the largest tech community</span> on campus.
   </p>
-</CallToActionSection>
+</CallToActionSection> -->
 
-<Spacing amount="175px" />
+<Spacing amount="120px" />

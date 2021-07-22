@@ -4,6 +4,7 @@
   import CommonHero from "@/components/sections/common-hero.svelte";
   import NodeBudsTestimonial from "@/components/nodebuds/nodebuds-testimonial.svelte";
   import CallToActionSection from "@/components/sections/call-to-action-section.svelte";
+  import OfficerProfileList from "@/components/sections/buddies-list.svelte";
 </script>
 
 <Spacing amount="200px"/>
@@ -15,10 +16,19 @@
       <p>
         <span class="headers">
           node<span class="brand-em brand-red">Buds</span>
+        </span> is our exclusive program where underclassmen get paired with mentors, 
+        called <span class="mid">Buddies</span>, who will assist them with adjusting to university 
+        life while simultaneously preparing them for their personal journeys in tech.
+        <br><br>
+        Our program exposes underclassmen 
+        to various opportunities that encourage connection, skill building, as well as both personal 
+        and technical development.
+        <!-- <span class="headers">
+          node<span class="brand-em brand-red">Buds</span>
         </span> is our exclusive mentorship program that aims to assist underclassmen with 
         adjusting to university life while simultaneously preparing them for life in tech.  
         Our program exposes underclassmen to various opportunities that encourage connecting forming, 
-        skill building, and both personal and technical development.
+        skill building, and both personal and technical development. -->
       </p>
     </div>
     <img
@@ -29,6 +39,40 @@
 </div>
 
 <Spacing amount="200px"/>
+
+<NodeBudsTestimonial>
+  <p slot="content1">
+    "Great way to get ahold of how you can move forward in your computer science
+    journey!"
+    <Spacing amount="8px"/>
+    <span class="mid">
+      Johnson Tong, Fall 2020
+    </span>
+  </p>
+
+  <p slot="content2">
+    "Great way to get ahold of how you can move forward in your computer science
+    journey!"
+    <Spacing amount="8px"/>
+    <span class="mid">
+      Johnson Tong, Fall 2020
+    </span>
+  </p>
+
+  <p slot="content3">
+    "Great way to get ahold of how you can move forward in your computer science
+    journey!"
+    <Spacing amount="8px"/>
+    <span class="mid">
+      Johnson Tong, Fall 2020
+    </span>
+  </p>
+</NodeBudsTestimonial>
+
+<Spacing amount="200px"/>
+<OfficerProfileList />
+
+<Spacing amount="120px"/>
 
 <!-- <NodeBudsTestimonial
   src="../assets/png/node-buds-testimonial-illustration.png"
@@ -118,7 +162,7 @@
   }
 
   section div {
-    max-width: 650px;
+    max-width: 520px;
   }
 
   section h2 {

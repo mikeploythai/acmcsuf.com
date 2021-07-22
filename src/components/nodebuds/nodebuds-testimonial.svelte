@@ -5,8 +5,12 @@
 
 <section>
   <div class="info-container">
-    <h2>Testimonial - <slot name="semester" tag="span" /></h2>
-    <slot name="content" tag="p" />
+    <h2 class="headers">Testimonials</h2>
+    <span>
+      <slot name="content1" tag="p" />
+      <slot name="content2" tag="p" />
+      <slot name="content3" tag="p" />
+    </span>
   </div>
   <!-- <div class="image-container">
     <img src="{src}" alt="{alt}" />
@@ -16,7 +20,24 @@
 <style>
   section {
     display: flex;
+    justify-content: center;
     text-align: center;
+  }
+
+  .info-container span {
+    display: flex;
+    justify-content: space-between;
+    min-width: 1064px;
+  }
+
+  .info-container :global(h2) {
+    font-size: 36px;
+    padding-bottom: 16px;
+  }
+
+  .info-container :global(p) {
+    font-size: 16px;
+    max-width: 250px;
   }
 /*   section {
     display: flex;

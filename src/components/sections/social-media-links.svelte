@@ -5,35 +5,35 @@
   import YouTubeIcon from "@/components/icons/youtube.svelte";
 
   const socialLinks: {
-    platform: string;
+    platform?: string;
     link: string;
     icon: any;
   }[] = [
     {
-      platform: "Instagram",
-      link: "https://www.instagram.com/acmcsuf/",
+      /* platform: "Instagram", */
+      link: "https://instagram.com/acmcsuf/",
       icon: InstagramIcon,
     },
     {
-      platform: "Discord",
-      link: "https://tinyurl.com/acm-csuf-discord/",
-      icon: DiscordIcon,
-    },
-    {
-      platform: "LinkedIn",
-      link: "https://www.linkedin.com/company/acm-at-csuf/",
+      /* platform: "LinkedIn", */
+      link: "https://linkedin.com/company/acm-at-csuf/",
       icon: LinkedInIcon,
     },
     {
-      platform: "YouTube",
-      link: "https://www.youtube.com/channel/UCDMBj0o4V8Cpt0jgsZLNVVg",
+      /* platform: "YouTube", */
+      link: "https://youtube.com/channel/UCDMBj0o4V8Cpt0jgsZLNVVg",
       icon: YouTubeIcon,
+    },
+    {
+      /* platform: "Discord", */
+      link: "https://tinyurl.com/acm-csuf-discord/",
+      icon: DiscordIcon,
     },
   ];
 </script>
 
 <section class="social-media-links-section">
-  {#each socialLinks as { platform, link, icon } (platform)}
+  {#each socialLinks as {link, icon}}
     <a
       href="{link}"
       class="social-link"
@@ -41,13 +41,33 @@
       rel="noopener norefferer"
     >
       <svelte:component this="{icon}" />
-      {platform}
     </a>
   {/each}
 </section>
 
 <style>
   .social-media-links-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-link :global(svg) {
+    height: 64px;
+    width: 64px;
+    margin: 0 32px;
+  }
+
+  .social-link :global(path) {
+    fill: var(--acm-dark);
+    transition: fill 0.25s ease-in-out;
+  }
+
+  .social-link:hover :global(path) {
+    fill: var(--acm-blue);
+  }
+
+  /* .social-media-links-section {
     display: flex;
     flex-direction: column;
     margin: 0 32px;
@@ -99,5 +119,5 @@
       margin: 1em;
       font-size: var(--body-font-size);
     }
-  }
+  } */
 </style>

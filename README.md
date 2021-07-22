@@ -7,31 +7,31 @@
 - [x] Replaced all assets with SVG variants where possible
 - [x] Updated color palette
 - [x] Updated graphics for home page and about page
-- [ ] Fixed all font weights
+- [x] Fixed all font weights
 - [x] Introduced font weight 500
-- [ ] Re-worded all paragraphs of sections
-- [ ] Re-named all headers except paths page headers
+- [x] Re-worded all paragraphs of sections
+- [x] Re-named all headers except paths page headers
 - [x] Fixed no fade out glitch on all buttons and links
 - [x] Buttons and links change color upon hover
 - [x] Shadows are more spread
 - [x] Elements are now constrained to center of screen rather than sides
 - [x] Minimalized footer
 - [x] Board member section defaults to 2021-2022 school year
-- [ ] Added 2021-2022 board member data
+- [x] Added 2021-2022 board member data
 - [x] Arrow removed from board member button
 - [ ] Event cards display different shadow colors based on which calendar an event is slotted in
 - [x] Replaced "|" divider with "/" in tab header
 - [x] Depreceated "So what are you waiting for?" CTA
-- [ ] Depreceated SkipNavbar function on all pages, redundant
-- [ ] Redesigned nodeBuds page, introduce nodeBuds officer section
+- [x] Depreceated SkipNavbar function on all pages, redundant
+- [x] Redesigned nodeBuds page, introduce nodeBuds officer section
 - [x] acmCSUF badge and h1 removed from CommonHero
-- [ ] Depreceated social media tabs from connect page, replaced with social media logos
+- [x] Depreceated social media tabs from connect page, replaced with social media logos
 - [ ] Depreceated Google Form contact box to avoid making our own privacy policy, replaced with custom made contact form
 - [ ] Fixed tab header not displaying proper page name which switching
-- [ ] Introduced new temp badges for board member section in about
+- [x] Introduced new temp badges for board member section in about
 - [x] Introduced max-width property to sections
 - [ ] Adapt changes to mobile layout
-- [ ] Disable user-select for nav bar
+- [x] Disable user-select for nav bar
 
 ---
 

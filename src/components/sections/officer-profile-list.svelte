@@ -52,6 +52,6 @@
     display: flex;
     flex-flow: row wrap;
     max-width: 1250px;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 </style>

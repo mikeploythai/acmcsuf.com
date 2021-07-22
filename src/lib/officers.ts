@@ -28,7 +28,7 @@ export const officers: Record<string, Officer[]> = {
       title: "Algo Director",
     },
     {
-      name: "Alex",
+      name: "Alex Truong",
       title: "Algo Officer",
     },
     {

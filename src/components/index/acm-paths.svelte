@@ -15,7 +15,8 @@
 
   <div class="paths-list">
     {#each acmPaths as { title, slug, picture, color } (slug)}
-      <a class="path-item" href="{`/paths#${slug}`}">
+      <!-- svelte-ignore a11y-missing-attribute -->
+      <a class="path-item">
         <img src="{picture}" alt="{`${slug}-logo`}" />
         <p class="headers">
           acm<span use:styleProps="{{ 'brand-color': color }}" class="brand-em">{title}</span>
