@@ -13,24 +13,22 @@
   />
 </section>
 
-<style>
+<style lang="scss">
+  @import "static/theme.scss";
+
   section {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 0 24px;
   }
 
   section .main-text {
     max-width: 950px;
   }
 
-  section :global(h2) {
-    font-size: 36px;
-  }
-
   section :global(p) {
-    font-size: 16px;
     margin-top: 16px;
   }
 

@@ -19,6 +19,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    margin: 0 32px;
   }
 
   section div {

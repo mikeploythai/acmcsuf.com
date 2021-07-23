@@ -52,6 +52,7 @@
   p {
     font-size: 12px;
     font-weight: 500;
+    max-width: 100px;
     color: var(--acm-dark);
   }
 

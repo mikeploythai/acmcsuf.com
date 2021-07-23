@@ -19,11 +19,14 @@
   </div>
 </section>
 
-<style>
+<style lang="scss">
+  @import "static/theme.scss";
+
   section {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 24px;
   }
 
   section .right-content {
@@ -35,19 +38,37 @@
     max-width: 680px;
   }
 
-  section .right-content .headers {
-    font-size: 36px;
-  }
-
   section .right-content p {
     padding-top: 16px;
-    font-size: 16px;
   }
 
   section img {
     max-width: 350px;
     margin-right: 120px;
     filter: drop-shadow(0 10px 40px rgba(44, 145, 198, 0.5));
+  }
+
+  @media (max-width: 1019px) {
+    section {
+      flex-direction: column;
+    }
+
+    section img {
+      margin-right: 0;
+      margin-bottom: 96px;
+    }
+
+    section .right-content {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  
+  @media (max-width: 559px) {
+    section img {
+      max-width: 220px;
+    }
   }
   
   /* section {

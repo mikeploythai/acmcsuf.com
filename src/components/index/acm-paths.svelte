@@ -26,12 +26,15 @@
   </div>
 </section>
 
-<style>
+<style lang="scss">
+  @import "static/theme.scss";
+
   section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 24px;
   }
 
   .paths-intro {
@@ -42,27 +45,21 @@
     max-width: 1050px;
   }
 
-  .paths-intro h2 {
-    font-size: 36px;
-  }
-
   .paths-intro p {
     margin-top: 16px;
-    font-size: 16px;
   }
 
   .paths-list {
     display: flex;
+    justify-content: space-between;
+    width: 900px;
     margin-top: 64px;
-    user-select: none;
   }
 
   .path-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-decoration: none;
-    margin: 0 75px 0;
   }
 
   .path-item img {
@@ -70,12 +67,22 @@
   }
 
   .path-item p {
-    font-size: 24px;
     text-decoration: none;
   }
 
   .path-item p span {
     color: var(--brand-color);
+  }
+
+  @media (max-width: 939px) {
+    .paths-list {
+      flex-direction: column;
+      height: 700px;
+    }
+
+    .path-item img {
+      max-width: 150px;
+    }
   }
   
   /* .paths-intro {

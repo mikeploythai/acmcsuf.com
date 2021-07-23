@@ -31,7 +31,6 @@
 </script>
 
 <section>
-  <h2>Upcoming events</h2>
   <div class="event-carousel-container">
     <div
       bind:this="{carouselButtonLeft}"
@@ -68,12 +67,6 @@
 <style>
   section {
     margin: 0;
-  }
-
-  section h2 {
-    text-transform: lowercase;
-    font-size: var(--subheading-font-size);
-    margin: 0 150px 40px;
   }
 
   section .grabbing {
@@ -162,9 +155,6 @@
   }
 
   @media screen and (max-width: 768px) {
-    section h2 {
-      text-align: center;
-    }
 
     .event-item-buffer {
       width: 20px;

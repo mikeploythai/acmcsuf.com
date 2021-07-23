@@ -23,8 +23,12 @@
   </div>
 </footer>
 
-<style>
+<style lang="scss">
+  @import "static/theme.scss";
+
   footer {
+    display: flex;
+    justify-content: center;
     width: 100%;
     background-color: var(--acm-dark);
   }
@@ -36,13 +40,14 @@
   }
 
   footer .content {
-    justify-content: center;
+    justify-content: space-between;
     padding: 24px 0;
+    margin: 0 24px;
+    width: 1156px;
   }
 
   footer p {
     font-size: 18px;
-    margin-right: 970px;
   }
 
   footer .github :global(svg) {
@@ -57,5 +62,16 @@
 
   footer .github:hover :global(path) {
     fill: var(--acm-blue);
+  }
+
+  @media (max-width: 839px) {
+    footer .github :global(svg) {
+      height: 24px;
+      width: 24px;
+    }
+
+    footer .content {
+      padding: 12px 0;
+    }
   }
 </style>

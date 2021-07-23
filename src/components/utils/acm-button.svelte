@@ -10,7 +10,9 @@
   rel="noopener norefferer">{text}</a
 >
 
-<style>
+<style lang="scss">
+  @import "static/theme.scss";
+
   .call-to-action {
     display: block;
     text-align: center;
@@ -22,7 +24,6 @@
     margin-top: 64px;
     background-color: var(--acm-dark);
     color: var(--acm-light);
-    font-size: 24px;
     transition: background-color 0.25s ease-in-out;
   }
 

@@ -6,16 +6,16 @@
   import CallToActionSection from "@/components/sections/call-to-action-section.svelte";
 </script>
 
-<Spacing amount="200px" />
+<Spacing minAmount="128px" maxAmount="200px" />
 <Hero />
 
-<Spacing amount="200px" />
+<Spacing minAmount="128px" maxAmount="200px" />
 <WhyJoin />
 
-<Spacing amount="200px" />
+<Spacing minAmount="128px" maxAmount="200px" />
 <AcmPaths />
 
-<Spacing amount="200px" />
+<Spacing minAmount="128px" maxAmount="200px" />
 <CallToActionSection>
   <h2 slot="headline" class="headers">Ready to get started?</h2>
   <p slot="text">
@@ -26,4 +26,4 @@
   </p>
 </CallToActionSection>
 
-<Spacing amount="120px" />
+<Spacing minAmount="72px" maxAmount="120px" />

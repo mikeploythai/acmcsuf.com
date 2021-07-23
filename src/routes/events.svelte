@@ -45,7 +45,7 @@
       {#if isLoading}
         Loading…
       {:else}
-        There are no events scheduled for this week.
+        There are no events scheduled!
       {/if}
     </p>
   </AcmEmpty>

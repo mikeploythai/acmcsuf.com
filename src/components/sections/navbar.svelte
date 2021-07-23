@@ -13,7 +13,7 @@
 </script>
 
 <nav>
-  <!-- <input type="checkbox" id="navToggle" /> -->
+  <input type="checkbox" id="navToggle" />
   <div class="content">
     <a href="/" class="full-logomark">
       <img
@@ -41,18 +41,20 @@
     </ul>
   </div>
 
-  <!--  <label for="navToggle" class="menu">
+   <label for="navToggle" class="menu">
     <div class="menuLine"></div>
     <div class="menuLine"></div>
     <div class="menuLine"></div>
-  </label> -->
+  </label>
 </nav>
 
 <style>
   nav {
     position: fixed;
+    display: flex;
     z-index: 100;
     width: 100%;
+    justify-content: center;
     background-color: var(--acm-light);
     filter: drop-shadow(0 2px 8px rgba(16, 19, 21, 0.1));
     -webkit-filter: drop-shadow(0 2px 8px rgba(16, 19, 21, 0.1));
@@ -72,12 +74,10 @@
   }
 
   nav .content {
-    justify-content: center;
+    justify-content: space-between;
     padding: 24px 0;
-  }
-
-  nav .full-logomark {
-    margin-right: 376px;
+    margin: 0 24px;
+    width: 1156px;
   }
 
   nav .full-logomark .logo-badge {
@@ -114,6 +114,75 @@
   nav .page-nodebuds:hover, 
   nav .page-nodebuds[aria-current="true"] {
     color: var(--acm-red);
+  }
+
+  #navToggle {
+    display: none;
+  }
+
+  nav .menu {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  nav .menu .menuLine {
+    width: 24px;
+    height: 2px;
+    margin: 6px;
+    border-radius: 8px;
+    background-color: var(--acm-dark);
+    transition: all 0.25s ease;
+  }
+
+  @media (max-width: 839px) {
+    nav .content {
+      padding: 12px 0;
+    }
+
+    nav .pages {
+      position: fixed;
+      z-index: 90;
+      top: 0;
+      left: 0;
+      bottom: 100%;
+      width: 100vw;
+      height: auto;
+      flex-direction: column;
+      justify-content: space-evenly;
+      overflow: hidden;
+      background-color: var(--acm-light);
+      transition: all 0.25s ease;
+    }
+
+    nav .pages a {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav .menu {
+      display: block;
+      right: 18px;
+    }
+
+    nav :checked ~ .pages {
+      bottom: 0;
+    }
+
+    nav :checked ~ .menu .menuLine:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    nav :checked ~ .menu .menuLine:nth-child(2) {
+      opacity: 0;
+    }
+
+    nav :checked ~ .menu .menuLine:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
   }
 
   /* nav {
