@@ -42,27 +42,30 @@
   ></div>
   <div class="event-card">
     <p class="event-date">
-      <span class="brand-em">
-        {info.month} <span class="brand-blue">{info.day}</span>
+      <span class="mid">
+        {info.month} {info.day}
       </span>
     </p>
     <h3
+      class="headers"
       class:copied="{isSuccessfullyCopied}"
       on:click="{() => copyEventLink(info.slug)}"
     >
       {info.summary}
     </h3>
     <div>
-      <p class="event-time">Starts at {info.time}</p>
+      <p class="event-time">{info.time} PT</p>
       <p class="event-location">
         Hosted on {isDiscordEvent ? "Discord" : "Zoom"}
       </p>
-      <AcmButton link="{meetingLink}" text="Click here to join!" />
+      <AcmButton link="{meetingLink}" text="Click to join!" />
     </div>
   </div>
 </div>
 
-<style>
+<style lang="scss">
+  @import "static/theme.scss";
+
   .event-box {
     display: flex;
     position: relative;
@@ -76,8 +79,8 @@
 
   .event-box > .anchor:target + .event-card,
   .event-box > .anchor.active + .event-card {
-    border: 2px solid #ff003388;
-    box-shadow: 0px 12px 18px #ff003388;
+    border: 2px solid var(--acm-blue);
+    /* box-shadow: 0 6px 24px rgba(212, 17, 83, 0.5); */
   }
 
   .event-card {
@@ -86,55 +89,49 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 320px;
-    min-width: 180px;
-    margin: 0 15px;
-    padding: 20px;
-    box-shadow: 0px 12px 18px rgba(55, 146, 193, 0.5);
-    border-radius: 25px;
+    width: 200px;
+    height: 300px;
+    margin: 32px 0 32px 64px;
+    padding: 32px;
+    box-shadow: 0 6px 24px rgba(44, 145, 198, 0.5);
+    border-radius: 30px;
   }
 
-  .event-card > div.anchor {
+  /* .event-card > div.anchor {
     visibility: hidden;
     position: absolute;
     top: -200px;
-  }
+  } */
 
   .event-card h3 {
     position: relative;
-    font-size: calc(var(--subheading-font-size) * 0.75);
-    line-height: var(--subheading-font-size);
-    margin: 10px 0;
+    width: 186px;
     text-align: center;
     user-select: none;
-  }
-
-  .event-card h3:hover {
-    cursor: pointer;
+    color: var(--acm-dark);
+    transition: all .25s ease-in-out;
   }
 
   .event-card h3:hover {
     color: var(--acm-blue);
-    text-decoration: underline;
+    cursor: pointer;
   }
 
   .event-card .copied::before {
-    content: "Copied!";
+    content: "Copied link!";
     position: absolute;
     width: 100%;
     border-radius: 10px;
-    background-color: var(--acm-dark);
+    background-color: var(--acm-blue);
     color: var(--acm-light);
+    font-weight: 500;
     padding: 0.25rem;
-    top: -0.5rem;
     left: 50%;
     transform: translate(-50%, -100%);
-    opacity: 0.95;
-    font-size: var(--body-font-size);
+    opacity: 0.8;
   }
 
   .event-card p {
-    font-size: calc(var(--body-font-size) * 0.75);
     text-align: center;
     user-select: none;
   }

@@ -35,7 +35,7 @@
 <Spacing minAmount="100px" amount="175px" maxAmount="200px" />
 
 <h2 class="headers">This week's events</h2>
-<Spacing minAmount="32px" maxAmount="64px" />
+<Spacing amount="16px" />
 
 {#if events.length > 0}
   <EventCarousel events="{events}" />
@@ -51,7 +51,7 @@
   </AcmEmpty>
 {/if}
 
-<Spacing minAmount="40px" amount="95px" maxAmount="120px" />
+<Spacing minAmount="8px" amount="63px" maxAmount="88px" />
 
 <!-- <CallToActionSection>
   <h2 slot="headline">So what are you waiting for?</h2>
