@@ -29,13 +29,16 @@
   </p>
 </div>
 
-<style>
+<style lang="scss">
+  @import "static/theme.scss";
+
   .officer-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 64px 64px 0;
+    text-align: center;
   }
 
   .officer-image {
@@ -44,15 +47,13 @@
   }
 
   h3 {
-    font-size: 18px;
     color: var(--acm-dark);
     margin-top: 8px;
   }
 
   p {
-    font-size: 12px;
     font-weight: 500;
-    max-width: 100px;
+    max-width: 150px;
     color: var(--acm-dark);
   }
 

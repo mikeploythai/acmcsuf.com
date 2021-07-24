@@ -29,7 +29,9 @@
     </p>
   </div>
   
-  <style>
+  <style lang="scss">
+    @import "static/theme.scss";
+
     .officer-container {
       display: flex;
       flex-direction: column;
@@ -44,13 +46,11 @@
     }
   
     h3 {
-      font-size: 18px;
       color: var(--acm-dark);
       margin-top: 8px;
     }
   
     p {
-      font-size: 12px;
       font-weight: 500;
       color: var(--acm-dark);
     }

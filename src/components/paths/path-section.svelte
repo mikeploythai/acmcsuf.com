@@ -29,7 +29,9 @@
 {/if}
 </div>
 
-<style>
+<style lang="scss">
+  @import "static/theme.scss";
+
   .container {
     display: flex;
     justify-content: center;
@@ -39,12 +41,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 1064px;
+    width: 1064px;
+    margin: 0 32px;
   }
 
   section img {
     margin-left: -32px;
-    min-width: 350px;
+    width: 350px;
   }
 
   section div {
@@ -53,16 +56,11 @@
   }
 
   section div h2 {
-    font-size: 36px;
     padding-bottom: 16px;
   }
 
   section div h2 span span {
     color: var(--font-color);
-  }
-
-  section div :global(p) {
-    font-size: 16px;
   }
 
   /* Left */
@@ -76,6 +74,21 @@
 
   .👈 img {
     margin-right: -32px;
+  }
+
+  @media (max-width: 839px) {
+    section, .👈 {
+      flex-direction: column;
+    }
+
+    section div, .👈 div {
+      text-align: center
+    }
+
+    section img, .👈 img {
+      margin: 0;
+      width: 200px;
+    }
   }
   
 

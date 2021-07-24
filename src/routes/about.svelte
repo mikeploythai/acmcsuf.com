@@ -6,10 +6,10 @@
   import Header from "@/components/about/what-is-acm.svelte";
 </script>
 
-<Spacing amount="200px" />
+<Spacing minAmount="100px" amount="175px" maxAmount="200px" />
 <Header />
 
-<Spacing amount="64px" />
+<Spacing minAmount="32px" maxAmount="64px" />
 <CommonHero>
   <h2 slot="headline">Who are we?</h2>
   <p slot="text">
@@ -26,10 +26,10 @@
   </p>
 </CommonHero>
 
-<Spacing amount="200px" />
+<Spacing minAmount="100px" amount="175px" maxAmount="200px" />
 <OfficerProfileList />
 
-<Spacing amount="120px" />
+<Spacing minAmount="40px" amount="95px" maxAmount="120px" />
 
 <!--
 <CallToActionSection>

@@ -7,7 +7,7 @@
   import OfficerProfileList from "@/components/sections/buddies-list.svelte";
 </script>
 
-<Spacing amount="200px"/>
+<Spacing minAmount="100px" amount="175px" maxAmount="200px" />
 
 <div class="container">
   <section>
@@ -38,7 +38,7 @@
   </section>
 </div>
 
-<Spacing amount="200px"/>
+<Spacing minAmount="100px" amount="175px" maxAmount="200px" />
 
 <NodeBudsTestimonial>
   <p slot="content1">
@@ -69,10 +69,10 @@
   </p>
 </NodeBudsTestimonial>
 
-<Spacing amount="200px"/>
+<Spacing minAmount="100px" amount="175px" maxAmount="200px" />
 <OfficerProfileList />
 
-<Spacing amount="120px"/>
+<Spacing minAmount="40px" amount="95px" maxAmount="120px" />
 
 <!-- <NodeBudsTestimonial
   src="../assets/png/node-buds-testimonial-illustration.png"
@@ -142,21 +142,25 @@
 
 <Spacing /> -->
 
-<style>
+<style lang="scss">
+  @import "static/theme.scss";
+
   .container {
     display: flex;
     justify-content: center;
+    margin: 0 32px;
   }
   
   section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 1064px;
+    width: 1064px;
   }
 
   section img {
-    min-width: 350px;
+    margin-right: -32px;
+    width: 350px;
     filter: drop-shadow(0 10px 40px rgba(212, 17, 83, 0.5));
     -webkit-filter: drop-shadow(0 10px 40px rgba(212, 17, 83, 0.5));
   }
@@ -166,12 +170,24 @@
   }
 
   section h2 {
-    font-size: 36px;
     padding-bottom: 16px;
   }
 
-  section p {
-    font-size: 16px;
+  @media (max-width: 839px) {
+    section {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+
+    section img {
+      margin: 0;
+      width: 175px;
+      padding-bottom: 32px;
+    }
+
+    .mid {
+      margin-bottom: 32px;
+    }
   }
 
   /* .brand-nodebuds {

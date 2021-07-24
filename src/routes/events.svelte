@@ -21,21 +21,21 @@
   });
 </script>
 
-<Spacing amount="200px" />
+<Spacing minAmount="100px" amount="175px" maxAmount="200px" />
 
 <CommonHero>
   <h2 slot="headline">Curated events for growth and success</h2>
   <p slot="text">
     Our student chapter hosts a multitude of events throughout each school semester, 
-    consisting of workshops, info sessions, community building events, and much more! 
+    consisting of workshops, info sessions, community building events, and much more!
+    <br><br>
     <span class="mid">Events are open to anyone interested, regardless of major or background experience.</span>
   </p>
 </CommonHero>
-
-<Spacing amount="200px"/>
+<Spacing minAmount="100px" amount="175px" maxAmount="200px" />
 
 <h2 class="headers">This week's events</h2>
-<Spacing amount="64px"/>
+<Spacing minAmount="32px" maxAmount="64px" />
 
 {#if events.length > 0}
   <EventCarousel events="{events}" />
@@ -51,7 +51,7 @@
   </AcmEmpty>
 {/if}
 
-<Spacing amount="120px" />
+<Spacing minAmount="40px" amount="95px" maxAmount="120px" />
 
 <!-- <CallToActionSection>
   <h2 slot="headline">So what are you waiting for?</h2>
@@ -65,14 +65,15 @@
 
 <Spacing amount="175px" /> -->
 
-<style>
+<style lang="scss">
+  @import "static/theme.scss";
+
   h2 {
     display: flex;
-    font-size: 36px;
     justify-content: center;
   }
 
   p {
-    font-size: 16px;
+    text-align: center;
   }
 </style>

@@ -48,14 +48,14 @@
     filter: drop-shadow(0 10px 40px rgba(44, 145, 198, 0.5));
   }
 
-  @media (max-width: 1019px) {
+  @media (max-width: 839px) {
     section {
       flex-direction: column;
     }
 
     section img {
       margin-right: 0;
-      margin-bottom: 96px;
+      margin-bottom: 32px;
     }
 
     section .right-content {

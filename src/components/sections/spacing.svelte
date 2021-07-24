@@ -15,18 +15,18 @@
 
 <style>
   div {
-    height: var(--min-spacing-height);
+    height: var(--max-spacing-height);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 839px) {
     div {
       height: var(--med-spacing-height);
     }
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (max-width: 359px) {
     div {
-      height: var(--max-spacing-height);
+      height: var(--min-spacing-height);
     }
   }
 </style>

@@ -9,7 +9,7 @@
     "1FAIpQLSfJanOAaL2mdjpf193tFeCClBzpW_COEO_crAE8hqsJCB_Rwg";
 </script>
 
-<Spacing amount="200px"/>
+<Spacing minAmount="100px" amount="175px" maxAmount="200px" />
 
 <CommonHero>
   <h2 slot="headline">Connect with us!</h2>
@@ -23,7 +23,7 @@
 <Spacing amount="64px"/>
 <SocialMediaLinks />
 
-<Spacing amount="200px"/>
+<Spacing minAmount="100px" amount="175px" maxAmount="200px" />
 <GetInTouchForm googleFormId="{googleFormId}" />
 
 <!-- <CommonHero src="../assets/png/acm-csuf-badge.png" alt="acm-CSUF-Logo">
@@ -58,4 +58,4 @@
   </p>
 </CallToActionSection> -->
 
-<Spacing amount="120px" />
+<Spacing minAmount="40px" amount="95px" maxAmount="120px" />

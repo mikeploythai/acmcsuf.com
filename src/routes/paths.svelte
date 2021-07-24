@@ -6,7 +6,7 @@
   import CallToActionSection from "@/components/sections/call-to-action-section.svelte";
 </script>
 
-<Spacing amount="200px"/>
+<Spacing minAmount="100px" amount="175px" maxAmount="200px" />
 
 <CommonHero>
   <h2 slot="headline">What are paths?</h2>
@@ -17,7 +17,7 @@
   </p>
 </CommonHero>
 
-<Spacing amount="200px"/>
+<Spacing minAmount="100px" amount="175px" maxAmount="200px" />
 
 <PathSection info="{acmAlgo}" textAlign="right">
   <p slot="content">
@@ -27,7 +27,7 @@
   </p>
 </PathSection>
 
-<Spacing amount="64px"/>
+<Spacing amount="64px" />
 
 <PathSection info="{acmCreate}" textAlign="left">
   <p slot="content">
@@ -38,7 +38,7 @@
   </p>
 </PathSection>
 
-<Spacing amount="64px"/>
+<Spacing amount="64px" />
 
 <PathSection info="{acmDev}" textAlign="right">
   <p slot="content">
@@ -48,7 +48,7 @@
   </p>
 </PathSection>
 
-<Spacing amount="120px" />
+<Spacing minAmount="40px" amount="95px" maxAmount="120px" />
 
 <!-- <CallToActionSection>
   <h2 slot="headline">How can I get involved?</h2>

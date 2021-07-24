@@ -17,27 +17,43 @@
   </div> -->
 </section>
 
-<style>
+<style lang="scss">
+  @import "static/theme.scss";
+
   section {
     display: flex;
     justify-content: center;
     text-align: center;
+    margin: 0 24px;
+  }
+
+  .info-container {
+    width: 1064px;
   }
 
   .info-container span {
     display: flex;
     justify-content: space-between;
-    min-width: 1064px;
   }
 
   .info-container :global(h2) {
-    font-size: 36px;
     padding-bottom: 16px;
   }
 
   .info-container :global(p) {
-    font-size: 16px;
     max-width: 250px;
+  }
+
+  @media (max-width: 839px) {
+    .info-container span {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .info-container :global(p) {
+      max-width: 450px;
+      margin-bottom: 32px;
+    }
   }
 /*   section {
     display: flex;

@@ -33,16 +33,18 @@
 </script>
 
 <section class="social-media-links-section">
-  {#each socialLinks as {link, icon}}
-    <a
-      href="{link}"
-      class="social-link"
-      target="_blank"
-      rel="noopener norefferer"
-    >
-      <svelte:component this="{icon}" />
-    </a>
-  {/each}
+  <span class="container">
+    {#each socialLinks as {link, icon}}
+      <a
+        href="{link}"
+        class="social-link"
+        target="_blank"
+        rel="noopener norefferer"
+      >
+        <svelte:component this="{icon}" />
+      </a>
+    {/each}
+  </span>
 </section>
 
 <style>
@@ -50,12 +52,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 24px;
+  }
+
+  .container {
+    display: flex;
+    width: 448px;
+    justify-content: space-between;
   }
 
   .social-link :global(svg) {
     height: 64px;
     width: 64px;
-    margin: 0 32px;
   }
 
   .social-link :global(path) {
@@ -65,6 +73,13 @@
 
   .social-link:hover :global(path) {
     fill: var(--acm-blue);
+  }
+
+  @media (max-width: 639px) {
+    .social-link :global(svg) {
+      height: 48px;
+      width: 48px;
+    }
   }
 
   /* .social-media-links-section {

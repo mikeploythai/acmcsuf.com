@@ -32,7 +32,9 @@
   </div>
 </section>
 
-<style>
+<style lang="scss">
+  @import "static/theme.scss";
+
   section {
     display: flex;
     flex-direction: column;
@@ -41,7 +43,6 @@
   }
   section h2 {
     text-align: center;
-    font-size: 36px;
   }
 
   .school-year-input-container {

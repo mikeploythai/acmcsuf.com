@@ -14,12 +14,14 @@
   </div>
 </section>
 
-<style>
+<style lang="scss">
+  @import "static/theme.scss";
+
   section {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 0 32px;
+    margin: 0 24px;
   }
 
   section div {
@@ -27,13 +29,11 @@
   }
 
   section div :global(h2) {
-    font-size: 36px;
     font-weight: 600;
   }
 
   section div :global(p) {
     margin-top: 16px;
-    font-size: 16px;
   } 
 
   /* section {

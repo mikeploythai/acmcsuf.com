@@ -52,13 +52,13 @@
   .paths-list {
     display: flex;
     justify-content: space-between;
-    width: 900px;
     margin-top: 64px;
   }
 
   .path-item {
     display: flex;
     flex-direction: column;
+    margin: 0 50px 0;
     align-items: center;
   }
 
@@ -74,7 +74,7 @@
     color: var(--brand-color);
   }
 
-  @media (max-width: 939px) {
+  @media (max-width: 839px) {
     .paths-list {
       flex-direction: column;
       height: 700px;
