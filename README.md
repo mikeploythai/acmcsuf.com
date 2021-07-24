@@ -27,10 +27,9 @@
 - [x] acmCSUF badge and h1 removed from CommonHero
 - [x] Depreceated social media tabs from connect page, replaced with social media logos
 - [ ] Depreceated Google Form contact box to avoid making our own privacy policy, replaced with custom made contact form
-- [ ] Fixed tab header not displaying proper page name which switching
 - [x] Introduced new temp badges for board member section in about
 - [x] Introduced max-width property to sections
-- [ ] Adapt changes to mobile layout
+- [x] Adapt changes to mobile layout
 - [x] Disable user-select for nav bar
 
 ---
