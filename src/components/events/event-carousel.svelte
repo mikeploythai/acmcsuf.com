@@ -108,7 +108,7 @@
   .event-carousel-container::before {
     left: 0;
     margin-left: -115px;
-    background: linear-gradient(to right, transparent 0%, var(--acm-light) 20%);
+    background: linear-gradient(to left, transparent 0%, var(--acm-light) 20%);
   }
 
   .carousel-button {
